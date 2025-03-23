@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* header*/
+.slide img {
+  width: 100%;
+  max-height: 600px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.social-media img {
+  width: 24px;
+  height: 24px;
+}
