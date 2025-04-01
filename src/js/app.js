@@ -30,3 +30,27 @@ function sliderFn() {
 }
 
 sliderFn();
+
+//progress bar
+
+document.addEventListener("DOMContentLoaded", () => {
+  const progressBars = document.querySelectorAll(".progress");
+
+  const fillProgress = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        let percentage = entry.target.getAttribute("data-percentage");
+        entry.target.style.width = percentage + "%";
+        observer.unobserve(entry.target);
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(fillProgress, {
+    threshold: 0.5,
+  });
+
+  progressBars.forEach((bar) => {
+    observer.observe(bar);
+  });
+});
