@@ -1,3 +1,4 @@
+// header
 function sliderFn() {
   const slides = document.querySelectorAll(".slide");
 

@@ -7,6 +7,10 @@ img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 1440px;
   width: 100%;
@@ -80,4 +84,54 @@ img {
   position: absolute;
   bottom: 50px;
   right: 60px;
+}
+
+/* section1 */
+.section-1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.section1-about {
+  max-width: 334px;
+  text-align: right;
+  padding-right: 70px;
+  margin-top: 70px;
+}
+
+.section-1 img {
+  max-width: 430px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hire {
+  background-color: #e93656;
+  font-size: 15px;
+  padding: 15px 50px;
+}
+
+.discribe {
+  margin-bottom: 60px;
+  margin-top: 33px;
+  font-size: 15px;
+}
+
+.developer {
+  color: #daae19;
+}
+
+.skills {
+  margin-left: 70px;
+  margin-top: 70px;
+}
+
+.skill {
+  font-size: 20px;
+  padding-bottom: 25px;
+}
+
+.soc-icons {
+  display: flex;
 }
