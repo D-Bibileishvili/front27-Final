@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 .container {
   max-width: 1440px;
   width: 100%;
@@ -384,35 +388,41 @@ a {
 /* Latest projects */
 .title {
   font-size: 50px;
-  margin-bottom: 55px;
-  margin-top: 100px;
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  color: #2e2e2e;
 }
 
 .latestProject {
   display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: fit-content;
+  max-width: 1200px;
   gap: 20px;
 }
 
 .filter-menu {
-  /* list-style: none; */
-  /* padding: 0;
-  margin: 0; */
-  width: 200px;
-  /* text-align: left; */
+  max-width: 200px;
+  min-width: 200px;
+  max-height: 400px;
+  padding: 30px;
+  background-color: #15263e;
+  color: white;
 }
 
 .filter-menu li {
   padding: 10px;
-  padding-left: 50px;
   cursor: pointer;
-  /* border-left: 2px solid transparent; */
   transition: 0.3s;
 }
 
 .filter-menu li:hover,
 .filter-menu .active {
   color: #e93656;
-  border-bottom: 2px solid #e93656;
+  /* border-bottom: 1px solid #e93656; */
 }
 
 .projects {
@@ -427,30 +437,53 @@ a {
 }
 
 .project-item img {
+  max-width: 300px;
   width: 100%;
   display: block;
   transition: transform 0.3s ease-in-out;
 }
 
-/* .project-item:hover img {
-  transform: scale(1.05);
-} */
-
-/* .overlay {
+.overlay {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   background: rgba(0, 0, 0, 0.7);
   color: white;
   padding: 5px 10px;
-  font-size: 14px;
-  display: none;
-} */
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
 
-/* .project-item:hover .overlay {
-    display: block;
-} */
+.project-item:hover .overlay {
+  opacity: 1;
+}
 
 .hidden {
   display: none;
+}
+
+.heart {
+  position: relative;
+  color: #e93656;
+  border: 1px solid #e93656;
+  width: 30px;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.data {
+  font-size: 11px;
+  padding-top: 17px;
+  padding-bottom: 7px;
+}
+
+.proTitle {
+  font-size: 23px;
 }
