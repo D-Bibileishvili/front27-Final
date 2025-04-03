@@ -232,3 +232,66 @@ a {
   font-size: 14px;
   padding-top: 15px;
 }
+
+/* section- Services */
+.services-pack {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-width: fit-content;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+
+.front-side img {
+  max-width: 55px;
+  margin-bottom: 15px;
+}
+
+.service-box {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.front-side,
+.back-side {
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  position: absolute;
+  backface-visibility: hidden;
+  align-items: center;
+}
+
+.back-side {
+  color: #ffffff;
+  background-color: #15263e;
+  transform: rotateY(180deg);
+  padding-top: 80px;
+}
+
+.back-side-text {
+  padding-top: 19px;
+}
+
+.box {
+  text-align: center;
+  max-width: 220px;
+  height: 300px;
+  width: 200px;
+  background-color: #fafafa;
+}
+
+.box:hover .service-box {
+  transform: rotateY(180deg);
+}
