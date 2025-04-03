@@ -301,6 +301,7 @@ a {
   position: relative;
   height: 270px;
   transition: opacity 1s ease-in-out;
+  overflow: hidden;
 }
 
 .recSlide {
@@ -323,9 +324,10 @@ a {
 }
 
 .box-1 {
+  max-width: 800px;
   display: flex;
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 15%;
   align-items: center;
 }
@@ -342,8 +344,8 @@ a {
   width: 13px;
   height: 13px;
   position: absolute;
-  margin-top: -110px;
-  right: 20%;
+  margin-top: -170px;
+  right: 15%;
 }
 
 .dot {
@@ -352,6 +354,7 @@ a {
   width: 13px;
   height: 13px;
   margin: 5px;
+  cursor: pointer;
 }
 
 .dot.active {
@@ -376,4 +379,78 @@ a {
 
 .quote {
   max-width: 39px;
+}
+
+/* Latest projects */
+.title {
+  font-size: 50px;
+  margin-bottom: 55px;
+  margin-top: 100px;
+}
+
+.latestProject {
+  display: flex;
+  gap: 20px;
+}
+
+.filter-menu {
+  /* list-style: none; */
+  /* padding: 0;
+  margin: 0; */
+  width: 200px;
+  /* text-align: left; */
+}
+
+.filter-menu li {
+  padding: 10px;
+  padding-left: 50px;
+  cursor: pointer;
+  /* border-left: 2px solid transparent; */
+  transition: 0.3s;
+}
+
+.filter-menu li:hover,
+.filter-menu .active {
+  color: #e93656;
+  border-bottom: 2px solid #e93656;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.project-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* .project-item:hover img {
+  transform: scale(1.05);
+} */
+
+/* .overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  display: none;
+} */
+
+/* .project-item:hover .overlay {
+    display: block;
+} */
+
+.hidden {
+  display: none;
 }
