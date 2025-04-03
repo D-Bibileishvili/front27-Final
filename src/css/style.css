@@ -289,9 +289,91 @@ a {
   max-width: 220px;
   height: 300px;
   width: 200px;
-  background-color: #fafafa;
+  background-color: rgb(241, 241, 241);
 }
 
 .box:hover .service-box {
   transform: rotateY(180deg);
+}
+
+/* section- recomendation */
+.recSlider {
+  position: relative;
+  height: 270px;
+  transition: opacity 1s ease-in-out;
+}
+
+.recSlide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0%;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.recImg {
+  max-width: 140px;
+  border: 1px dashed;
+  border-radius: 70px;
+  padding: 10px;
+  border-color: white;
+  margin-right: 50px;
+}
+
+.box-1 {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  align-items: center;
+}
+
+.recText {
+  max-width: 350px;
+  text-align: right;
+  margin-right: 50px;
+  color: #ffffff;
+  text-wrap: wrap;
+}
+
+.dots {
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  margin-top: -110px;
+  right: 20%;
+}
+
+.dot {
+  background-color: rgb(124, 121, 121);
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin: 5px;
+}
+
+.dot.active {
+  background-color: #e93656;
+}
+
+.show {
+  opacity: 1;
+}
+
+.recomendator {
+  font-size: 28px;
+  color: #ffffff;
+  padding-top: 9px;
+}
+
+.profesion {
+  font-size: 13px;
+  color: #e93656;
+  padding-top: 18px;
+}
+
+.quote {
+  max-width: 39px;
 }

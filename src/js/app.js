@@ -54,3 +54,28 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(bar);
   });
 });
+
+// section4- recomendation text
+const slides = document.querySelectorAll(".recSlide");
+const dots = document.querySelectorAll(".dot");
+
+let curentSlide = 0;
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove("show");
+    dots[i].classList.remove("active");
+  });
+
+  slides[index].classList.add("show");
+  dots[index].classList.add("active");
+}
+
+dots.forEach((dot) => {
+  dot.addEventListener("click", () => {
+    curentSlide = parseInt(dot.getAttribute("data-slide"));
+    showSlide(curentSlide);
+  });
+});
+
+showSlide(curentSlide);
