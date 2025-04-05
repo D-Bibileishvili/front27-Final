@@ -487,3 +487,84 @@ li {
 .proTitle {
   font-size: 23px;
 }
+
+/* section6 'Latest Articles' */
+
+.lastArticle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+}
+
+.articleBox {
+  display: contents;
+}
+
+.content {
+  text-align: left;
+  align-content: center;
+  padding: 30px;
+}
+
+.content p {
+  color: #494949;
+  font-size: 16px;
+  padding-top: 28px;
+  padding-bottom: 10px;
+  max-width: 570px;
+}
+.content h4 {
+  color: #161616;
+  font-size: 40px;
+}
+
+.content h6 {
+  padding-top: 64px;
+  color: #888888;
+}
+
+.preName,
+.articleTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.preName {
+  margin-top: 170px;
+  font-size: 13px;
+  color: #2ed279;
+}
+.artRdM {
+  color: #444444;
+  font-size: 14px;
+}
+
+.articleTitle {
+  font-size: 70px;
+  color: #2e2e2e;
+  padding-top: 5px;
+  margin-bottom: 79px;
+}
+
+.articleImg {
+  display: flex;
+}
+
+.year {
+  max-width: 123px;
+  width: 100%;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: center;
+  font-weight: bold;
+  color: #e93656;
+  background: #15263e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.articleIcon {
+  max-width: 70px;
+  margin-bottom: 20px;
+}
