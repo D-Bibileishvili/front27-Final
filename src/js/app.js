@@ -102,3 +102,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// section7
+
+document.querySelectorAll(".partners").forEach((partnersBox) => {
+  partnersBox.addEventListener("mouseenter", () => {
+    partnersBox.querySelector(".boxPartner").style.transform =
+      "rotateY(180deg)";
+  });
+
+  partnersBox.addEventListener("mouseleave", () => {
+    partnersBox.querySelector(".boxPartner").style.transform = "rotateY(0deg)";
+  });
+});
