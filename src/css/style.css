@@ -763,3 +763,48 @@ button:hover {
 .modal.show {
   display: flex;
 }
+
+/* footer */
+footer {
+  background-color: #282828;
+  color: #ffffff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 613px;
+  margin: 0 auto;
+}
+
+footer h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+footer p {
+  color: #a5a5a5;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.social-icons a {
+  color: #00bcd4;
+
+  margin: 0 10px;
+}
+
+.footer-bottom {
+  background-color: #171717;
+  color: #a0a8b7;
+  padding: 20px;
+  font-size: 15px;
+  align-content: center;
+  margin-top: 40px;
+}
+
+.footerImg {
+  max-width: 30px;
+}
