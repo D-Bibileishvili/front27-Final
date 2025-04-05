@@ -651,14 +651,14 @@ li {
 }
 
 /* section8 */
-
 .contact-section {
   position: relative;
   background-image: url("/src/img/map.jpg");
   background-size: cover;
   max-height: 660px;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/src/img/map.jpg");
+  /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    /* url("/src/img/map.jpg"); */ /* არ იმუშავა */
+  background-image: url("/src/img/map.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -807,4 +807,7 @@ footer p {
 
 .footerImg {
   max-width: 30px;
+}
+
+@media (width <= 1024px) {
 }
